@@ -1,5 +1,7 @@
 package _3_optional._1_api;
 
+import java.util.Optional;
+
 public class Patient {
 
     private String name;
@@ -13,8 +15,8 @@ public class Patient {
         this.name = name;
     }
 
-    public Doctor getDoctor() {
-        return doctor;
+    public Optional<Doctor> getDoctor() {
+        return Optional.ofNullable(doctor);
     }
 
     public void setDoctor(Doctor doctor) {
