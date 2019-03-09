@@ -21,12 +21,12 @@ public class StreamExercise {
 
     }
 
-    // TODO: Policz średnią wartość potęg liczb 2, 4, 8, 16, 32, 64. Jeżeli liczba jest większa od 500 wypisz stosowną informację.
+    // TODO: Znajdź wszystkie potęgi liczb 2, 4, 8, 16, 32, 64, 128 większe od 500. Policz ich średnią
     private static void exercise4() {
 
     }
 
-    // TODO*: Utwórz stream składający się z następujących dat 1992-08-25, 1995-01-20, 2019-03-10. Znajdź wszystkie daty z poprzedniego wieku.
+    // TODO*: Utwórz stream składający się z następujących dat 1992-08-25, 1895-01-20, 2019-03-10. Ile dat spełnia ten warunek?
     private static void exercise5() {
 
     }
