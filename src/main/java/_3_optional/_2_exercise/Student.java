@@ -1,5 +1,7 @@
 package _3_optional._2_exercise;
 
+import java.util.Optional;
+
 public class Student {
 
     private String name;
@@ -13,8 +15,8 @@ public class Student {
         this.name = name;
     }
 
-    public Essay getEssay() {
-        return essay;
+    public Optional<Essay> getEssay() {
+        return Optional.ofNullable(essay);
     }
 
     public void setEssay(Essay essay) {

@@ -1,12 +1,14 @@
 package _3_optional._2_exercise;
 
+import java.util.Optional;
+
 public class Essay {
 
     private String topic;
     private Integer grade;
 
-    public Integer getGrade() {
-        return grade;
+    public Optional<Integer> getGrade() {
+        return Optional.ofNullable(grade);
     }
 
     public void setGrade(Integer grade) {
