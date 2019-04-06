@@ -1,13 +1,13 @@
 package _4_streams._2_finding;
 
-import pl.infoshare.streams.model.Dish;
-import pl.infoshare.streams.model.Employee;
+import _4_streams.model.Dish;
+import _4_streams.model.Employee;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static pl.infoshare.streams.model.Dish.menu;
-import static pl.infoshare.streams.model.Employee.getEmployees;
+import static _4_streams.model.Dish.menu;
+import static _4_streams.model.Employee.getEmployees;
 
 public class FindingStreamOperations {
 

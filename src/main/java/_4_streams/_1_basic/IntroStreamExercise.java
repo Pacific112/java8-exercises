@@ -1,10 +1,12 @@
 package _4_streams._1_basic;
 
-import pl.infoshare.streams.Apple;
+
+import _4_streams.Apple;
 
 import java.util.List;
 
-import static pl.infoshare.streams.Apple.apples;
+import static _4_streams.Apple.apples;
+
 
 public class IntroStreamExercise {
 
