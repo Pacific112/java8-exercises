@@ -3,6 +3,7 @@ package _4_streams._1_basic;
 import _4_streams.model.Dish;
 import _4_streams.model.Employee;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +13,7 @@ import static _4_streams.model.Employee.getEmployees;
 
 public class BasicStreamOperations {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         exercise1();
     }
 
@@ -116,12 +117,12 @@ public class BasicStreamOperations {
 
     // TODO: Wczytaj linijki z pliku 'files/search.txt', znajdź te które zawierają wyraz 'Article'
     //       TIP: Do wczytania zawartości pliku skorzystaj z klasy Files.
-    private static void exercise18() {
+    private static void exercise18() throws IOException {
 
     }
 
     // TODO: Policz linijki z pliku 'files/search.txt' które nie zawierają wyrazu 'did'. Zignoruj puste linie
-    private static void exercise19() {
+    private static void exercise19() throws IOException {
 
     }
 }
