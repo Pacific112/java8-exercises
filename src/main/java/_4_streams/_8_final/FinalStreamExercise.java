@@ -1,4 +1,4 @@
-package _4_streams._7_final;
+package _4_streams._8_final;
 
 import java.util.List;
 
@@ -11,6 +11,10 @@ public class FinalStreamExercise {
     //       *  Wypisz wartości transakcji handlowców pochodzących z Cambridge
     //       *  Czy któryś z handlowców pochodzi z Milanu?
     //       *  Jaka była największa a jaka najmniejsza transakcja?
+    //       *  Pogrupuj handlowców zależnie od miasta z którego pochodzą
+    //       *  Pogrupuj transakcje zależnie od tego czy kwota na jaką zostały zawarte była mniejsza, czy większa od 500
+    //       *  Pogrupuj imiona wszystkich handlowców, rozdzielone przecinkiem
+    //       *  Wypisz imię handlowca, który zawarł największą transakcję
     public static void main(String[] args) {
         List<Transaction> transactions = Transaction.transactions();
 

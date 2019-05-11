@@ -1,4 +1,4 @@
-package _4_streams._7_final;
+package _4_streams._8_final;
 
 public class Trader {
 
