@@ -3,8 +3,10 @@ package _4_streams._2_finding;
 import _4_streams.model.Dish;
 import _4_streams.model.Employee;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import static _4_streams.model.Dish.menu;
 import static _4_streams.model.Employee.getEmployees;
@@ -12,7 +14,7 @@ import static _4_streams.model.Employee.getEmployees;
 public class FindingStreamOperations {
 
     public static void main(String[] args) {
-        exercise1();
+        exercise4();
     }
 
     // TODO: Znajdź pierwsze imię spełniające następujące warunki: posiada powyżej 7 znaków i nie zaczyna się na literę A
@@ -35,6 +37,15 @@ public class FindingStreamOperations {
     // TODO: Sprawdź czy któryś z pracowników zarabia powyżej 10000 zł
     public static void exercise4() {
         List<Employee> employees = getEmployees();
+        String employee = employees.stream()
+                .filter(Employee::earnsMoreThan)
+                .findFirst()
+//                .map(e -> e.getName())
+                .map(Employee::getName)
+                .orElse("Brak pracownika");
+
+        System.out.println(employee);
+
 
     }
 

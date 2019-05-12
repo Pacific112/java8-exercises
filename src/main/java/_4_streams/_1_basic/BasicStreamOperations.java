@@ -4,9 +4,13 @@ import _4_streams.model.Dish;
 import _4_streams.model.Employee;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static _4_streams.model.Dish.menu;
 import static _4_streams.model.Employee.getEmployees;
@@ -14,7 +18,7 @@ import static _4_streams.model.Employee.getEmployees;
 public class BasicStreamOperations {
 
     public static void main(String[] args) throws IOException {
-        exercise1();
+        exercise18();
     }
 
     // TODO: Utwórz stream skladajacy sie z ponizszych wyrazów, zamień wszystkie litery na wielkie a następnie zamień go na listę.
@@ -118,6 +122,11 @@ public class BasicStreamOperations {
     // TODO: Wczytaj linijki z pliku 'files/search.txt', znajdź te które zawierają wyraz 'Article'
     //       TIP: Do wczytania zawartości pliku skorzystaj z klasy Files.
     private static void exercise18() throws IOException {
+        List<String> lines = Files.readAllLines(Paths.get("files", "search.txt"));
+        List<String> files = Files.lines(Paths.get("files", "search.txt"))
+                .filter(line -> line.contains("Article"))
+                .collect(Collectors.toList());
+        System.out.println(files);
 
     }
 

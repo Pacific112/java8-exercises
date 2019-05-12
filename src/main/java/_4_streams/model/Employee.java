@@ -18,6 +18,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public boolean earnsMoreThan() {
+        return getSalary().compareTo(BigDecimal.valueOf(3000)) > 0;
+    }
+
     public String getName() {
         return name;
     }
